@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class FormCustomViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+open class FormCustomViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     private static var __once: () = {
             FormCustomViewController.defaultCellClasses[.text] = FormTextFieldCell.self
