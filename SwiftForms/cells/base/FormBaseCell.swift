@@ -18,7 +18,7 @@ open class FormBaseCell: UITableViewCell {
         }
     }
     
-    open weak var formViewController: FormViewController?
+    open weak var formViewController: UIViewController?
     
     fileprivate var customConstraints: [NSLayoutConstraint] = []
     
@@ -83,7 +83,7 @@ open class FormBaseCell: UITableViewCell {
         return false
     }
     
-    open class func formViewController(_ formViewController: FormViewController, didSelectRow: FormBaseCell) {
+    open class func formViewController(_ formViewController: UIViewController, didSelectRow: FormBaseCell) {
     }
     
     // MARK: Constraints
