@@ -41,7 +41,7 @@ open class FormSelectorCell: FormValueCell {
         }
     }
     
-    open override class func formViewController(_ formViewController: FormViewController, didSelectRow selectedRow: FormBaseCell) {
+    open override class func formViewController(_ formViewController: UIViewController, didSelectRow selectedRow: FormBaseCell) {
         guard let row = selectedRow as? FormSelectorCell else { return }
         
         formViewController.view.endEditing(true)
