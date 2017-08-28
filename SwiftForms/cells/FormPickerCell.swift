@@ -60,7 +60,7 @@ open class FormPickerCell: FormValueCell, UIPickerViewDelegate, UIPickerViewData
         return hiddenTextField
     }
     
-    open override class func formViewController(_ formViewController: FormViewController, didSelectRow selectedRow: FormBaseCell) {
+    open override class func formViewController(_ formViewController: UIViewController, didSelectRow selectedRow: FormBaseCell) {
         guard let row = selectedRow as? FormPickerCell else { return }
         
         if selectedRow.rowDescriptor?.value == nil {
