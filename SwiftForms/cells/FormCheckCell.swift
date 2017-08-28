@@ -34,7 +34,7 @@ open class FormCheckCell: FormTitleCell {
         accessoryType = (rowValue) ? .checkmark : .none
     }
     
-    open override class func formViewController(_ formViewController: FormViewController, didSelectRow selectedRow: FormBaseCell) {
+    open override class func formViewController(_ formViewController: UIViewController, didSelectRow selectedRow: FormBaseCell) {
         guard let row = selectedRow as? FormCheckCell else { return }
         row.check()
     }
