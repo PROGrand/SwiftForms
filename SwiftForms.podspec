@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "SwiftForms"
-  s.version = "1.7.1"
+  s.version = "1.8.1"
   s.summary = "A small and lightweight library written in Swift that allows you to easily create forms"
   s.homepage = "https://github.com/PROGrand/SwiftForms"
   s.license = { :type => "MIT", :file => "LICENSE" }
